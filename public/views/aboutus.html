@@ -1,0 +1,51 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">About Us</li>
+               </ul>
+            </div>
+            <div class="col-xs-12">
+               <h3>About Us</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-12">
+                <h2>Our History</h2>
+                <p>Started in 2018, helps people with Projects to complete in Zimbabwe to find skilled people who can help them complete their Projects.</p>
+                <p>ZimFix was started by Killian T. Mazibuko, a talented Software Engineer based in Harare.  ZimFix is helping to make Zimbabwe better.</p>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-9">
+                <h2>Corporate Leadership</h2>
+               <ul class="media-list">
+                <li class="media" ng-repeat="leader in leaders">
+                    <div class="media-left media-middle">
+                        <a>
+                        <img class="media-object img-thumbnail"
+                        ng-src={{leader.image}} alt="Peter Pan">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">{{leader.name}}
+                        <small>{{leader.designation}}</small></h3>
+                        <p>{{leader.description}}</p>
+                    </div>
+                </li>
+            </ul>
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div>
+        <div class="row row-content">
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div> 
+    </div>
